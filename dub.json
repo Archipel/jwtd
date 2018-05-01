@@ -15,7 +15,20 @@
 			"dependencies" : {
 				"openssl": "~>1.1.4+1.0.1g"
 			},
-			"versions": ["UseOpenSSL"]
+			"versions": ["UseOpenSSL", "UseOpenSSL10"]
+		},
+		{
+			"name": "openssl-1.1",
+			"targetType": "library",
+			"dependencies" : {
+				"openssl": {
+					"path": "/home/sedu/onakcanoes.com/d-openssl"
+				}
+			},
+			"subConfigurations": {
+				"openssl": "openssl-1.1"
+			},
+			"versions": ["UseOpenSSL", "UseOpenSSL11"]
 		},
 		{
 			"name": "botan",
